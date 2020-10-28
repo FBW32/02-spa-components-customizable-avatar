@@ -1,5 +1,12 @@
+html{
+    margin: 0 auto;
+    width: ;
+}
+
 .card{
-    width: 300px;
+    width: 400px;
+    height: 200px;
+    position: relative;
 }
 img{
     display: inline-block;
@@ -7,7 +14,7 @@ img{
 .s {
     width:30px;
     height:30px;
-    font-size: 28px;
+    font-size: 10px;
 }
 
 .m{
@@ -37,3 +44,5 @@ img{
 .square{
     border: 1px solid;
 }
+
+
