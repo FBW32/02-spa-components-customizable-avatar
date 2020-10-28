@@ -1,29 +1,35 @@
 .card{
     width: 300px;
+    margin: 10px 10px;
+    border: 1px grey solid;
+    padding: 10px;
 }
+
 img{
     display: inline-block;
 }
-.s {
-    width:30px;
-    height:30px;
-    font-size: 28px;
-}
 
-.m{
-    width:60px;
-    height:60px;
+.content{
     font-size: 15px;
 }
-.l{
+
+.S {
+    width:30px;
+    height:30px;
+}
+
+.M{
+    width:60px;
+    height:60px;
+}
+
+.L{
     width:120px;
     height:120px;
-    font-size: 18px;
 }
-.xl{
+.XL{
     width:150px;
     height:150px;
-    font-size: 22px;
 }
 
 .rounded{
