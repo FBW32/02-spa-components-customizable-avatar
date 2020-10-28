@@ -2,22 +2,24 @@
 import React from 'react';
 import Avatar from './Avatar';
 
+
 function App() {
   const data =[
+    {size:"s",type:"sqaure"},
     {size:"s",type:"rounded"},
-    {size:"s",type:"rounded"},
+    {size:"s",type:"circle"},
+    {size:"m",type:"sqaure"},
+    {size:"m",type:"rounded"},
+    {size:"m",type:"circle"},
     {size:"l",type:"sqaure"},
-    {size:"m",type:"cicle"},
+    {size:"l",type:"rounded"},
+    {size:"l",type:"circle"},
+    {size:"xl",type:"sqaure"},
     {size:"xl",type:"rounded"},
-    {size:"s",type:"rounded"},
-    {size:"s",type:"rounded"},
-    {size:"l",type:"sqaure"},
-    {size:"m",type:"cicle"},
-    {size:"xl",type:"rounded"}
+    {size:"xl",type:"circle"}
   ]
   return (
     <div className="App">
-      <h1>My React App</h1>
       <div style={{"display":"flex","flexWrap":"wrap"}}> 
       {data.map(item=>{
         return (
@@ -25,19 +27,6 @@ function App() {
         )
       })}
 
-
-
-
-
-
-
-      {/* <Avatar size="s" type="circle"/>
-      <Avatar size="l" type="rounded"/>
-      <Avatar />
-      <Avatar size="l" type="rounded"/>
-      <Avatar />
-      <Avatar size="l" type="rounded"/>
-      <Avatar /> */}
 
       </div>
     </div>
