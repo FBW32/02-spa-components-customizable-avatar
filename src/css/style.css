@@ -1,8 +1,26 @@
+
 .card{
-    width: 300px;
+    width: 20%;
+    height: 190px;
+    padding: 10px;
+    /* border: 1px solid black; */
+    display: flexbox;
+    justify-content: center;
 }
+
+.content{
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
 img{
     display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
 }
 .s {
     width:30px;
