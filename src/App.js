@@ -1,48 +1,43 @@
 
 import React from 'react';
 import Avatar from './Avatar';
+import myimage from "./img/1.jpg"
+
+
 
 function App() {
-  const data =[
-    {size:"s",type:"rounded"},
-    {size:"s",type:"rounded"},
-    {size:"l",type:"sqaure"},
-    {size:"m",type:"cicle"},
-    {size:"xl",type:"rounded"},
-    {size:"s",type:"rounded"},
-    {size:"s",type:"rounded"},
-    {size:"l",type:"sqaure"},
-    {size:"m",type:"cicle"},
-    {size:"xl",type:"rounded"}
+
+  let data = [
+    {size: "s", type:"square", url:"https://picsum.photos/400/400"},
+    {size: "s", type:"rounded", url:"https://picsum.photos/400/400"},
+    {size: "s", type:"circle", url:"https://picsum.photos/400/400"},
+    {size: "m", type:"square", url:"https://picsum.photos/400/400"},
+    {size: "m", type:"rounded", url:"https://picsum.photos/400/400"},
+    {size: "m", type:"circle", url:"https://picsum.photos/400/400"},
+    {size: "l", type:"square", url:"https://picsum.photos/400/400"},
+    {size: "l", type:"rounded", url:"https://picsum.photos/400/400"},
+    {size: "l", type:"circle", url:"https://picsum.photos/400/400"},
+    {size: "xl", type:"square", url:"https://picsum.photos/400/400"},
+    {size: "xl", type:"rounded", url:"https://picsum.photos/400/400"},
+    {size: "xl", type:"circle", url:"https://picsum.photos/400/400"},
   ]
+  
   return (
-    <div className="App">
-      <h1>My React App</h1>
-      <div style={{"display":"flex","flexWrap":"wrap"}}> 
-      {data.map(item=>{
-        return (
-          <Avatar size={item.size} type={item.type}/>
-        )
-      })}
+    <div className="App"  >
+    
 
+<div style={{display: "flex", flexWrap: "wrap"}}>
+   {data.map((item)=> {
+     return (
+       <Avatar url={item.url} size={item.size} type={item.type} />
+     )
+   })}
+</div>
 
-
-
-
-
-
-      {/* <Avatar size="s" type="circle"/>
-      <Avatar size="l" type="rounded"/>
-      <Avatar />
-      <Avatar size="l" type="rounded"/>
-      <Avatar />
-      <Avatar size="l" type="rounded"/>
-      <Avatar /> */}
-
-      </div>
     </div>
-  );
-}
+      )}
+    
+  
 
 
 export default App;
