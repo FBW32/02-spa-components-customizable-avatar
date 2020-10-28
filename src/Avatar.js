@@ -4,7 +4,6 @@ import "./css/style.css";
 
 export default function Avatar({size,type} ) {
 
-/* const {size="s" , type="sqaure"}= props */
   return (
     <div className="card">
       <div className="image">
